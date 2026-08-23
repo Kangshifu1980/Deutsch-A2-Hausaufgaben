@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hausaufgabe Lektion 31</title>
+<style>
+@page{size:A4;margin:0}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Segoe UI",Arial,sans-serif;
+  background:#eef2f3;
+  color:#1f2937;
+  font-size:10px;
+  line-height:1.3;
+}
+.page{
+  width:210mm;
+  height:297mm;
+  background:#fff;
+  margin:10px auto;
+  padding:9mm 13mm 8mm;
+  position:relative;
+  overflow:hidden;
+}
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  border-bottom:2px solid #0f766e;
+  padding-bottom:5px;
+  margin-bottom:6px;
+}
+.header h1{
+  font-size:17px;
+  color:#115e59;
+  margin:0 0 2px;
+}
+.subtitle{
+  color:#475569;
+  font-size:10.5px;
+}
+.vn{
+  color:#0f766e;
+  font-size:9.4px;
+  font-style:italic;
+}
+.badge{
+  background:#ccfbf1;
+  color:#115e59;
+  padding:3px 9px;
+  border-radius:14px;
+  font-weight:700;
+  white-space:nowrap;
+}
+.ex{margin-bottom:5px}
+.t{
+  background:#0f766e;
+  color:#fff;
+  padding:3px 7px;
+  border-radius:6px 6px 0 0;
+  font-weight:700;
+  letter-spacing:.2px;
+}
+.b{
+  border:1px solid #99f6e4;
+  border-top:none;
+  border-radius:0 0 6px 6px;
+  padding:5px 7px;
+  background:#f8fffe;
+}
+.sub{
+  font-weight:700;
+  color:#134e4a;
+  margin-top:2px;
+}
+.wordbank{
+  background:#ecfeff;
+  border:1px solid #a5f3fc;
+  border-radius:5px;
+  padding:3px 6px;
+  margin:3px 0;
+}
+.line{
+  display:block;
+  border-bottom:1px solid #94a3b8;
+  height:12px;
+}
+.inline{
+  display:inline-block;
+  min-width:95px;
+  height:11px;
+  border-bottom:1px solid #94a3b8;
+  vertical-align:baseline;
+}
+.inline-sm{
+  display:inline-block;
+  min-width:55px;
+  height:11px;
+  border-bottom:1px solid #94a3b8;
+  vertical-align:baseline;
+}
+.two{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+}
+.taskbox{
+  border:1px solid #cbd5e1;
+  border-radius:6px;
+  background:#fff;
+  padding:4px 6px;
+}
+.taskbox p{margin:2px 0}
+.dialog{
+  background:#fffbeb;
+  border:1px solid #fbbf24;
+  border-radius:6px;
+  padding:5px 7px;
+}
+.dialog p{margin:2px 0}
+.speaker{font-weight:700;color:#92400e}
+.guide{
+  background:#faf5ff;
+  border:1px solid #d8b4fe;
+  border-radius:6px;
+  padding:5px 7px;
+}
+.guide h4{margin:0 0 3px;color:#6b21a8;font-size:10.5px}
+.check{
+  display:inline-block;
+  border:1px solid #c4b5fd;
+  border-radius:10px;
+  padding:1px 5px;
+  margin:1px;
+  background:#fff;
+}
+.writing{
+  height:87px;
+  border:1px solid #cbd5e1;
+  border-radius:5px;
+  margin-top:4px;
+  background:repeating-linear-gradient(to bottom,#fff 0,#fff 16px,#d1d5db 17px);
+}
+.sol{
+  background:#f0fdf4;
+  border:1px solid #86efac;
+  border-radius:6px;
+  padding:5px 7px;
+  font-size:8.8px;
+  line-height:1.22;
+}
+.sol h4{
+  margin:2px 0;
+  color:#166534;
+  font-size:9.4px;
+}
+.footer{
+  position:absolute;
+  bottom:5mm;
+  left:13mm;
+  right:13mm;
+  display:flex;
+  justify-content:space-between;
+  font-size:8px;
+  color:#777;
+  border-top:1px solid #e5e7eb;
+  padding-top:3px;
+}
+.small{font-size:9px}
+@media print{
+  body{background:#fff}
+  .page{margin:0;page-break-after:always}
+  .page:last-child{page-break-after:avoid}
+}
+</style>
+</head>
+<body>
+
+<section class="page">
+  <div class="header">
+    <div>
+      <h1>🇩🇪 Deutsch A2 – Hausaufgabe</h1>
+      <div class="subtitle">Lektion 31: Personen vorstellen und wiederaufnehmen</div>
+      <div class="vn">Giới thiệu và nhắc lại người đã nói đến</div>
+    </div>
+    <div class="badge">A2 · L31</div>
+  </div>
+
+  <div class="ex">
+    <div class="t">1 · WORTSCHATZ</div>
+    <div class="b">
+      <div class="sub">A · Ordne zu.</div>
+      1. der Kontakt – ___ &nbsp;&nbsp; 2. der Kollege – ___ &nbsp;&nbsp; 3. die Nachbarin – ___<br>
+      4. kennen – ___ &nbsp;&nbsp; 5. treffen – ___ &nbsp;&nbsp; 6. anrufen – ___<br>
+      <span class="small">a. gặp &nbsp; b. gọi điện &nbsp; c. đồng nghiệp &nbsp; d. hàng xóm &nbsp; e. biết, quen &nbsp; f. mối liên hệ</span>
+
+      <div class="sub">B · Ergänze die Kollokationen.</div>
+      <div class="wordbank">Kontakt · Kollegin · Nachbarn · Mutter</div>
+      7. einen neuen <span class="inline"></span> haben &nbsp;&nbsp;
+      8. die <span class="inline"></span> treffen<br>
+      9. den <span class="inline"></span> kennen &nbsp;&nbsp;
+      10. die <span class="inline"></span> anrufen
+
+      <div class="sub">C · Ergänze das passende Verb.</div>
+      <div class="wordbank">kennen · treffen · anrufen</div>
+      11. Ich <span class="inline-sm"></span> den neuen Kollegen.<br>
+      12. Wir <span class="inline-sm"></span> eine Freundin am Samstag.<br>
+      13. Mai <span class="inline-sm"></span> ihre Mutter jeden Sonntag <b>an</b>.
+
+      <div class="sub">D · Was passt nicht?</div>
+      14. Kollege · Kollegin · Nachbar · Nachricht → <span class="inline"></span><br>
+      15. kennen · treffen · anrufen · wohnen → <span class="inline"></span>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="t">2 · GRAMMATIK – Personalpronomen im Nominativ</div>
+    <div class="b">
+      <div class="sub">A · Ersetze das wiederholte Nomen.</div>
+      1. Das ist Frau Roth. Frau Roth wohnt im gleichen Haus.<span class="line"></span>
+      2. Das ist mein Handy. Das Handy ist neu.<span class="line"></span>
+      3. Das sind Jonas und Elena. Jonas und Elena arbeiten mit Mai.<span class="line"></span>
+      4. Das ist Herr Yilmaz. Herr Yilmaz leitet das Projekt.<span class="line"></span>
+
+      <div class="sub">B · Ergänze Pronomen und Verb.</div>
+      5. Das ist meine Schwester. ______ ______ in Huế. (wohnen)<br>
+      6. Das sind meine Eltern. ______ ______ in Vietnam. (leben)<br>
+      7. Das ist das Kind. ______ ______ müde. (sein)<br>
+      8. Du und ich sind Kollegen. ______ ______ oft Deutsch. (sprechen)
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="t">3 · FEHLER FINDEN</div>
+    <div class="b">
+      Korrigiere die Sätze.
+      <div class="two">
+        <div class="taskbox">
+          1. Das ist mein Bruder. Sie arbeitet in Berlin.<span class="line"></span>
+          2. Das sind meine Nachbarn. Er kommen aus Österreich.<span class="line"></span>
+        </div>
+        <div class="taskbox">
+          3. Ich kenne der neue Kollege.<span class="line"></span>
+          4. Der Chef ruft den Kollegin an.<span class="line"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="t">4 · SATZBILDUNG</div>
+    <div class="b">
+      Bilde korrekte Sätze. Beginne mit dem markierten Subjekt.
+      <br>1. <b>meine Kollegin</b> · den neuen Kunden · im Büro · kennen<span class="line"></span>
+      2. <b>er</b> · eine Freundin · am Samstag · treffen<span class="line"></span>
+      3. <b>wir</b> · den Nachbarn · heute Abend · anrufen<span class="line"></span>
+      4. <b>sie</b> · das Kind · im Krankenhaus · besuchen<span class="line"></span>
+      5. <b>der Chef</b> · die Kollegin · nach dem Mittagessen · anrufen<span class="line"></span>
+    </div>
+  </div>
+
+  <div class="footer"><span>Deutsch A2 · Hausaufgabe Lektion 31</span><span>Seite 1 / 2</span></div>
+</section>
+
+<section class="page">
+  <div class="header">
+    <div>
+      <h1>🇩🇪 Deutsch A2 – Hausaufgabe</h1>
+      <div class="subtitle">Lektion 31: Personen vorstellen und wiederaufnehmen</div>
+      <div class="vn">Giới thiệu và nhắc lại người đã nói đến</div>
+    </div>
+    <div class="badge">A2 · L31</div>
+  </div>
+
+  <div class="ex">
+    <div class="t">5 · KOMMUNIKATION</div>
+    <div class="b">
+      <div class="wordbank">Das ist · Sie arbeitet · Er leitet · Kennst du · Ich treffe · Rufst du</div>
+      Ergänze den Dialog.
+      <div class="dialog">
+        <p><span class="speaker">Linh:</span> Wer ist die Frau neben Herrn Becker?</p>
+        <p><span class="speaker">Tom:</span> __________ Anna Weber. __________ im Kundenservice.</p>
+        <p><span class="speaker">Linh:</span> __________ die Kollegin schon?</p>
+        <p><span class="speaker">Tom:</span> Ja. __________ die Kollegin oft im Büro.</p>
+        <p><span class="speaker">Linh:</span> Und wer ist der Mann am Fenster?</p>
+        <p><span class="speaker">Tom:</span> Das ist Herr Yilmaz. __________ das Projekt.</p>
+        <p><span class="speaker">Linh:</span> __________ den Projektleiter heute noch an?</p>
+      </div>
+      <div class="sub">Schreibe zwei passende Antworten.</div>
+      1. Wo arbeitet Anna Weber?<span class="line"></span>
+      2. Wen trifft Tom oft im Büro?<span class="line"></span>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="t">6 · ÜBERSETZUNG (VN → DE)</div>
+    <div class="b">
+      1. Đây là đồng nghiệp mới của tôi. Cô ấy làm việc ở bộ phận chăm sóc khách hàng.<span class="line"></span>
+      2. Đây là anh/em trai tôi. Anh ấy sống ở Berlin.<span class="line"></span>
+      3. Chúng tôi gặp người hàng xóm hôm nay.<span class="line"></span>
+      4. Tôi quen người đồng nghiệp mới.<span class="line"></span>
+      5. Sếp gọi điện cho nữ đồng nghiệp sau bữa trưa.<span class="line"></span>
+      6. Đây là bố mẹ tôi. Họ sống ở Việt Nam.<span class="line"></span>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="t">7 · FREIES SCHREIBEN</div>
+    <div class="b">
+      <div class="guide">
+        <h4>Schreibe 80–100 Wörter: Zwei wichtige Kontakte</h4>
+        Stelle zwei Personen aus verschiedenen Lebensbereichen vor, zum Beispiel Familie, Arbeit oder Nachbarschaft.
+        <br><br><b>Leitfragen:</b><br>
+        • Wer ist die Person? &nbsp; • Wo wohnt oder arbeitet die Person?<br>
+        • Was macht die Person? &nbsp; • Woher kennst du die Person?<br>
+        • Wie oft triffst oder rufst du die Person an?<br><br>
+        <b>Verwende:</b>
+        <span class="check">Name/Nomen zuerst</span>
+        <span class="check">er/sie danach</span>
+        <span class="check">mindestens 2 Akkusativobjekte mit Nomen</span>
+        <span class="check">kennen, treffen oder anrufen</span>
+      </div>
+      <div class="writing"></div>
+    </div>
+  </div>
+
+  <div class="ex">
+    <div class="t">✅ LÖSUNGEN</div>
+    <div class="sol">
+      <h4>1 · Wortschatz</h4>
+      A: 1f, 2c, 3d, 4e, 5a, 6b. B: 7 Kontakt, 8 Kollegin, 9 Nachbarn, 10 Mutter.
+      C: 11 kenne, 12 treffen, 13 ruft. D: 14 Nachricht, 15 wohnen.
+
+      <h4>2 · Grammatik</h4>
+      A: 1 Das ist Frau Roth. Sie wohnt im gleichen Haus.
+      2 Das ist mein Handy. Es ist neu.
+      3 Das sind Jonas und Elena. Sie arbeiten mit Mai.
+      4 Das ist Herr Yilmaz. Er leitet das Projekt.
+      B: 5 Sie wohnt, 6 Sie leben, 7 Es ist, 8 Wir sprechen.
+
+      <h4>3 · Fehler finden</h4>
+      1 Das ist mein Bruder. Er arbeitet in Berlin.
+      2 Das sind meine Nachbarn. Sie kommen aus Österreich.
+      3 Ich kenne den neuen Kollegen.
+      4 Der Chef ruft die Kollegin an.
+
+      <h4>4 · Satzbildung – Musterlösungen</h4>
+      1 Meine Kollegin kennt den neuen Kunden im Büro.
+      2 Er trifft am Samstag eine Freundin.
+      3 Wir rufen heute Abend den Nachbarn an.
+      4 Sie besucht das Kind im Krankenhaus.
+      5 Der Chef ruft nach dem Mittagessen die Kollegin an.
+
+      <h4>5 · Kommunikation</h4>
+      Das ist · Sie arbeitet · Kennst du · Ich treffe · Er leitet · Rufst du.
+      1 Sie arbeitet im Kundenservice.
+      2 Tom trifft die Kollegin oft im Büro.
+
+      <h4>6 · Übersetzung – Musterlösungen</h4>
+      1 Das ist meine neue Kollegin. Sie arbeitet im Kundenservice.
+      2 Das ist mein Bruder. Er wohnt in Berlin.
+      3 Wir treffen heute den Nachbarn.
+      4 Ich kenne den neuen Kollegen.
+      5 Der Chef ruft nach dem Mittagessen die Kollegin an.
+      6 Das sind meine Eltern. Sie leben in Vietnam.
+
+      <h4>7 · Freies Schreiben</h4>
+      Individuelle Lösung. Prüfe: zwei Personen, passende Personalpronomen im Nominativ,
+      passende Verbformen und mindestens zwei Akkusativobjekte mit Nomen.
+    </div>
+  </div>
+
+  <div class="footer"><span>Deutsch A2 · Hausaufgabe Lektion 31</span><span>Seite 2 / 2</span></div>
+</section>
+
+</body>
+</html>
